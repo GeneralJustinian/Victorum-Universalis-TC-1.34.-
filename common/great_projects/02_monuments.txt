@@ -40,6 +40,10 @@ walls_of_theodosius = {
 				religion_group = muslim
 				has_owner_religion = yes
 			}
+			AND = {
+				religion_group = pagan
+				has_owner_religion = yes
+			}
 		}
 	}
 
@@ -63,6 +67,10 @@ walls_of_theodosius = {
 				religion_group = muslim
 				has_owner_religion = yes
 			}
+			AND = {
+				religion_group = pagan
+				has_owner_religion = yes
+			}
 		}
 	}
 
@@ -75,6 +83,10 @@ walls_of_theodosius = {
 			}
 			AND= {
 				religion_group = muslim
+				has_owner_religion = yes
+			}
+			AND = {
+				religion_group = pagan
 				has_owner_religion = yes
 			}
 		}
