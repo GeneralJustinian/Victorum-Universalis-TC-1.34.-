@@ -10829,11 +10829,23 @@ diocletian_palace = {
     type = monument
 
     build_trigger = {
-        culture_group = south_slavic
-		OR = {
+        OR = {
+		AND = {
+			culture_group = south_slavic
 			has_owner_culture = yes
 			has_owner_accepted_culture = yes
-		}		
+		}
+		AND = {
+			culture_group = latin
+			has_owner_culture = yes
+			has_owner_accepted_culture = yes
+		}
+		AND = {
+			culture_group = old_latin
+			has_owner_culture = yes
+			has_owner_accepted_culture = yes
+		}
+	}		
     }
 
     on_built = {
@@ -10843,19 +10855,43 @@ diocletian_palace = {
     }
 
     can_use_modifiers_trigger = {
-	    culture_group = south_slavic
-		OR = {
+	    OR = {
+		AND = {
+			culture_group = south_slavic
 			has_owner_culture = yes
 			has_owner_accepted_culture = yes
-		}	
+		}
+		AND = {
+			culture_group = latin
+			has_owner_culture = yes
+			has_owner_accepted_culture = yes
+		}
+		AND = {
+			culture_group = old_latin
+			has_owner_culture = yes
+			has_owner_accepted_culture = yes
+		}
+	}	
     }
 
     can_upgrade_trigger = {
-		culture_group = south_slavic
-		OR = {
+	OR = {
+		AND = {
+			culture_group = south_slavic
 			has_owner_culture = yes
 			has_owner_accepted_culture = yes
-		}	
+		}
+		AND = {
+			culture_group = latin
+			has_owner_culture = yes
+			has_owner_accepted_culture = yes
+		}
+		AND = {
+			culture_group = old_latin
+			has_owner_culture = yes
+			has_owner_accepted_culture = yes
+		}
+	}	
     }
 
     keep_trigger = {
